@@ -1,0 +1,10 @@
+.employee {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.employee-content {
+ max-width: 850px;
+}

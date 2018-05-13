@@ -1,0 +1,40 @@
+@import url("components/employee.css");
+@import url("components/card.css");
+@import url("components/banner.css");
+@import url("components/partners.css");
+@import url("components/navbar.css");
+@import url("components/footer.css");
+@import url("components/margins.css");
+@import url("components/section.css");
+@import url("components/contact.css");
+.flex-left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.items-center {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+p {
+  font-size: 17px;
+}
+
+h2, h3, h4 {
+  color:  rgb(0,169,157) !important;
+}
