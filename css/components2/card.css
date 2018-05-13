@@ -1,0 +1,22 @@
+.card {
+  height: 200px;
+  background-image: url("http://fr.web.img4.acsta.net/pictures/17/11/14/11/43/0306810.jpg");
+  background-size: cover !important;
+  position: relative;
+}
+
+.card-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.card-text {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 15;
+}

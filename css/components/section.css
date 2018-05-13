@@ -1,0 +1,12 @@
+.section {
+  border: solid 2px rgb(0,169,157);
+  border-radius: 3px;
+  min-height: 400px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+.section i {
+  color:  rgb(0,169,157);
+  font-size: 60px;
+  margin-bottom: 25px;
+}

@@ -1,0 +1,90 @@
+@import url("components/avatars.css");
+@import url("components/cadre.css");
+@import url("components/buttons.css");
+@import url("components/card.css");
+@import url("components/banner.css");
+
+h1 {
+  color: #AECFCE;
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive;
+
+}
+
+
+
+body {
+  background-color: #FDB5B7;
+  font-family: 'Lato', sans-serif;
+}
+
+/*p {
+  font-weight: bold;
+}*/
+
+#avatar {
+  width: 100px;
+}
+
+.network {
+  width: 50px;
+}
+
+#abstract {
+  font-weight: bold;
+}
+
+.shadow {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.icon-network {
+  font-size: 70px;
+  color: #AECFCE;
+  text-decoration: none;
+}
+
+
+h4 {
+  background-color: red;
+  height: 50px;
+}
+
+
+
+
+svg{
+ position:absolute;
+  width:100%;
+  height:100%;
+  visibility:hidden;
+  transform:translate(-50%, 0%);
+}
+
+
+.flex {
+  height: 500px;
+  background-color: yellow;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-item {
+  height: 100px;
+  background-color: red;
+  width: 500px;
+  border: solid 2px black;
+}
+
+
+
+
+
+
+
+
+
+
