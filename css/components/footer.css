@@ -29,7 +29,18 @@
   font-size: 8px;
 }
 
-.mention-legal a {
-  text-decoration: none;
+.footer-copyright a {
   color: rgba(0,0,0,0.3);
+  text-decoration: none !important;
+}
+
+.footer-copyright a:hover {
+  opacity: 1;
+}
+
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
