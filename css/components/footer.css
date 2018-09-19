@@ -24,3 +24,23 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+.mention-legal{
+  font-size: 8px;
+}
+
+.footer-copyright a {
+  color: rgba(0,0,0,0.3);
+  text-decoration: none !important;
+}
+
+.footer-copyright a:hover {
+  opacity: 1;
+}
+
+.footer-copyright{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
