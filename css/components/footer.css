@@ -24,3 +24,12 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+.mention-legal{
+  font-size: 8px;
+}
+
+.mention-legal a {
+  text-decoration: none;
+  color: rgba(0,0,0,0.3);
+}
