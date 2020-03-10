@@ -7,6 +7,20 @@
 @import url("components/margins.css");
 @import url("components/section.css");
 @import url("components/contact.css");
+@import url("components/timeline.css");
+@import url("components/wrapper.css");
+
+p {
+  font-size: 17px;
+}
+
+h2, h3, h4 {
+  color:  rgb(0,169,157) !important;
+}
+
+.color-blue, h2.color-blue, h3.color-blue {
+  color: #03e0ca !important;
+}
 .flex-left {
   display: flex;
   align-items: center;
@@ -29,12 +43,4 @@
   display: flex;
   align-items: center;
   height: 100%;
-}
-
-p {
-  font-size: 17px;
-}
-
-h2, h3, h4 {
-  color:  rgb(0,169,157) !important;
 }
