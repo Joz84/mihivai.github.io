@@ -52,3 +52,12 @@
 .card-link:hover {
   opacity: 0.1;
 }
+
+.card-team h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+.card-team h4 {
+  font-size: 20px;
+}
+

@@ -7,6 +7,7 @@
 .timeline {
   position: relative;
   width: 660px;
+  max-width: 100%;
   margin: 0 auto;
   margin-top: 20px;
   padding: 1em 0;
@@ -26,7 +27,7 @@
 }
 
 .timeline li {
-  padding: 1em 0;
+  padding: 5px 0;
 }
 
 .timeline li:after {
@@ -41,12 +42,13 @@
   position: relative;
   width: 300px;
   float: left;
-  text-align: right;
+  max-width: calc(50% - 30px);
 }
 
 .direction-r {
   position: relative;
   width: 300px;
+  max-width: calc(50% - 30px);
   float: right;
 }
 
@@ -66,8 +68,6 @@
 
 }
 
-
-
 .direction-l .flag:before,
 .direction-r .flag:before {
   position: absolute;
@@ -81,7 +81,7 @@
   background: #d1f7f2;
   border-radius: 20px;
   border: 9px solid #86F1E6;
-  z-index: 10;
+  z-index: 1;
 }
 
 .direction-r .flag:before {
@@ -140,147 +140,124 @@
 }
 
 .desc {
-  margin: 1em 0.75em 0 0;
-  font-size: 1.2em;
+  margin: 10px 0.75em 0 0;
+  font-size: 16px;
   line-height: 1.3em;
-  height: 150px;
-
 }
 
 .direction-r .desc {
-  margin: 1em 0 0 0.75em;
+  margin: 10px 0 0 0.75em;
 }
 
 /* ================ Timeline Media Queries ================ */
 
 @media screen and (max-width: 660px) {
+  .timeline {
+    width: 100%;
+    padding: 0 0 1em 0;
+  }
 
-    .timeline {
-      width: 100%;
-      padding: 0 0 1em 0;
-      }
+  .timeline li {
+    padding: 1.4em 0;
+  }
 
-    .timeline li {
-      padding: 1.4em 0;
-      }
+  .direction-l,
+  .direction-r {
+    float: none;
+    width: 100%;
+    max-width: 100%;
 
-    .direction-l,
-    .direction-r {
-      float: none;
-      width: 100%;
+    text-align: center;
+  }
 
-      text-align: center;
-      }
+  .flag-wrapper {
+    text-align: center;
+  }
 
-    .flag-wrapper {
-      text-align: center;
-      }
+  .flag {
+    background: #dcfdfa;
+    z-index: 15;
+    font-size: 18px;
+  }
 
-    .flag {
-      background: #dcfdfa;
-      z-index: 15;
+  .direction-l .flag:before,
+  .direction-r .flag:before {
+    position: absolute;
+    top: -15px;
+    left: 53%;
+    content: ' ';
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: -13px;
+    background: #d1f7f2;
+    border-radius: 20px;
+    border: 6px solid #86F1E6;
+    z-index: 10;
+  }
+
+  .direction-l .flag:after,
+  .direction-r .flag:after {
+
+    position: absolute;
+    left: 50%;
+    top: -76px;
+    height: 0;
+    width: 0;
+    margin-left: -8px;
+    border: solid transparent;
+    border-bottom-color:  #d1f7f2;
+    border-width: 8px;
+    pointer-events: none;
+  }
+  .time-wrapper {
+    display: block;
+    position: relative;
+    margin: 4px 0 0 0;
+    z-index: 14;
+  }
+  .direction-l .time-wrapper {
+    float: none;
+    }
+
+  .direction-r .time-wrapper {
+    float: none;
+  }
+  .direction-l .desc,
+  .direction-r .desc {
+    position: relative;
+    z-index: 15;
+    margin: 0 auto;
+    max-width: 220px;
+    padding: 0px 10px;
+  }
+  .wrapper-blue {
+    background-color: #dcfdfa;
+    padding: 15px 0;
+  }
+  .subtitle {
       font-size: 18px;
-      }
+      margin: 15px;
+      margin-bottom: 40px;
 
-    .direction-l .flag:before,
-    .direction-r .flag:before {
-      position: absolute;
-      top: -15px;
-      left: 53%;
-      content: ' ';
-      display: block;
-      width: 20px;
-      height: 20px;
-      margin-left: -13px;
-      background: #d1f7f2;
-      border-radius: 20px;
-      border: 6px solid #86F1E6;
-      z-index: 10;
-      }
+  }
+  .timeline:before {
+    height: 60%;
+    width: 0;
 
-    .direction-l .flag:after,
-    .direction-r .flag:after {
+  }
+  .desc {
+    position: relative;
+    margin: 0;
+    background: #dcfdfa;
+    z-index: 15;
+    font-size: 12px;
+    padding: 0;
 
-      position: absolute;
-      left: 50%;
-      top: -76px;
-      height: 0;
-      width: 0;
-      margin-left: -8px;
-      border: solid transparent;
-      border-bottom-color:  #d1f7f2;
-      border-width: 8px;
-      pointer-events: none;
-      }
-
-    .time-wrapper {
-      display: block;
-      position: relative;
-      margin: 4px 0 0 0;
-      z-index: 14;
-      }
-
-    .direction-l .time-wrapper {
-      float: none;
-      }
-
-    .direction-r .time-wrapper {
-      float: none;
-      }
-
-
-
-    .direction-l .desc,
-    .direction-r .desc {
-      position: relative;
-      margin: 1em 1em 0 1em;
-      padding: 1em;
-      z-index: 15;
-      }
-
-
-
-    .direction-l .desc,
-    .direction-r .desc {
-      margin: 0 10em;
-      padding: 0;
-
-
-      }
-
-    .wrapper-blue {
-      background-color: #dcfdfa;
-      padding: 15px 0;
-      }
-
-    .subtitle {
-        font-size: 18px;
-        margin: 15px;
-        margin-bottom: 40px;
-
-      }
-
-    .timeline:before {
-      height: 60%;
-      width: 0;
-
-      }
-
-      .desc {
-      position: relative;
-      margin: 0;
-      height: 70px;
-      background: #dcfdfa;
-      z-index: 15;
-      font-size: 10px;
-      padding: 0;
-
-      }
-
-      .flag {
-      position: relative;
-      display: inline;
-      padding: 6px 0;
-
+  }
+  .flag {
+    position: relative;
+    display: inline;
+    padding: 6px 0;
   }
 }
