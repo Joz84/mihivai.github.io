@@ -54,3 +54,51 @@
   flex-direction: column;
   justify-content: center;
 }
+
+.banner-home {
+  color: white;
+  text-align: center;
+  height: calc(100vh - 130px);
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
+  background-position: right center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /*justify-content: center;*/
+}
+.banner-home-content img {
+  width: 300px;
+}
+.banner-home h1 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.banner-home h1 span {
+  font-size: 60px;
+}
+.banner-img-right {
+  position: absolute;
+  right: 0px;
+  width: calc( 40% - 150px);
+  min-width: 280px;
+}
+.banner-img-left {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: calc( 40% - 150px);
+  min-width: 280px;
+}
+@media (max-width:767px) {
+  .banner-home h1 {
+    font-size: 20px;
+  }
+  .banner-home h1 span {
+    font-size: 40px;
+  }
+  .banner-home {
+    height: calc(100vh - 115px);
+  }
+}

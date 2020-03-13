@@ -151,7 +151,7 @@
 
 /* ================ Timeline Media Queries ================ */
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 767px) {
   .timeline {
     width: 100%;
     padding: 0 0 1em 0;

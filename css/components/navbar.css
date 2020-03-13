@@ -12,7 +12,9 @@
   z-index: 20;
   width: 100%;
 }
-
+.navbar-wagon .dropdown-toggle::after {
+    content: none;
+}
 /* Logo */
 .navbar-wagon-brand img {
   height: 50px;

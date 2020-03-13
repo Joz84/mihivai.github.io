@@ -44,11 +44,23 @@ body {
 .bg-light-grey {
   background-color: var(--light-grey-mhv);
 }
+.border-radius-20px {
+  border-radius: 20px;
+}
+.box-shadow {
+  box-shadow: 0 15px 35px rgba(126,87,88,.1), 0 5px 15px rgba(0,0,0,.07);
+}
 .color-blue {
   color: var(--blue-mhv);
 }
 .color-grey {
   color: var(--grey-mhv);
+}
+.container-img-responsive {
+  height: calc(100% + 3rem);
+}
+.dropdown-menu {
+  min-width: 11rem !important;
 }
 .flex-left {
   display: flex;
@@ -72,23 +84,24 @@ body {
 .font-size-20px {
   font-size: 20px;
 }
-.font-size-24px {
+.font-size-24px,
+h2.font-size-24px {
   font-size: 24px;
 }
 .font-size-30px {
   font-size: 30px;
 }
-.height-40-lg-100 {
-  height: auto;
-  width: 25%;
-}
-.height-50px-md-70px {
-  height: 50px;
+.height-30px-md-50px {
+  height: 30px;
 }
 .icon {
   width: auto !important;
   height: 30px;
   padding: 0 10px 0 0;
+}
+.icon-large {
+  width: auto !important;
+  height: 55px;
 }
 .items-center {
   display: flex;
@@ -126,6 +139,10 @@ body {
   transform: translateX(-50%);
   left: 50%;
 }
+.responsive-scene {
+  height: auto;
+  width: 90px;
+}
 .right-0 {
   right: 0px;
 }
@@ -135,6 +152,7 @@ body {
   margin-right: auto;
   text-align: center;
 }
+.title-container .h2,
 .title-container h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -154,15 +172,14 @@ body {
 .top-300px {
   top: 300px;
 }
-
 .transform-y-center {
   transform: translateY(-50%);
 }
 .transform-y-25 {
   transform: translateY(-25%);
 }
-.transform-y-35 {
-  transform: translateY(-35%);
+.transform-y-30 {
+  transform: translateY(-30%);
 }
 .z-index-1 {
   z-index: 1;
@@ -171,30 +188,43 @@ body {
   .padding-md-15 {
     padding-top: 15%
   }
-  .height-50px-md-70px {
-    height: 70px;
+  .height-30px-md-50px {
+    height: 50px;
     width: auto;
+  }
+  .responsive-scene {
+    width: 25%;
   }
 }
 @media (max-width:767px) {
   p {
-    font-size: 15px;
+    font-size: 14px;
   }
-  .title-container h2 {
-  font-size: 24px;
+  .title-container h2,
+  .title-container .h2  {
+    font-size: 20px;
   }
   .title-container p.color-grey {
-    font-size: 16px;
+    font-size: 14px;
   }
-  .font-size-20px-responsive {
-    font-size: 20px;
+  h2.font-size-16px-responsive,
+  .font-size-16px-responsive {
+    font-size: 16px;
   }
   .transform-x-10-negative-responsive {
     transform: translateX(-10%);
   }
+  .icon-large {
+    width: auto !important;
+    height: 40px;
+  }
+  .container-img-responsive {
+    top: -110px;
+  }
 }
-@media (min-width: 992px) {
-  .height-40-lg-100 {
+@media (min-width: 1199px) {
+  .responsive-scene {
     height: 100%;
+    width: auto;
   }
 }

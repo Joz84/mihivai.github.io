@@ -25,11 +25,9 @@ var counterValue = counter.textContent
 //      counter.classList.remove('radial-chart__value')
 //   }
 // });
-
 const increaseCounter = function (entries, observer) {
   entries.forEach(function (entry) {
-    if (entry.intersectionRatio > threshold)  {
-      counter.classList.remove("end");
+    if (entry.intersectionRatio > threshold && !counter.classList.contains("end"))  {
       var i=0;
       var interval = parseInt(counter.dataset.interval)
       var speed = parseInt(counter.dataset.speed)

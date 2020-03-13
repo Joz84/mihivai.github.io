@@ -56,5 +56,6 @@
   text-decoration: none;
 }
 .footer-mhv-icon img {
-  height: 30px;
+  height: 24px;
+  margin: 0px 4px;
 }
