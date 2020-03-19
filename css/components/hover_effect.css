@@ -34,21 +34,6 @@
   width: 100%;   // card size
 }
 
-.hovereffect:hover img {
-  -webkit-transform: translate3d(0,-25%,0);
-  transform: translate3d(0,-25%,0);
-
-}
-
-@media (max-width: 981px) {
-  .hovereffect:hover img {
-  -webkit-transform: translate3d(0,-40%,0);
-  transform: translate3d(0,-40%,0);
-
-  }
-
-}
-
 .hovereffect h2 {
   color: #fff;
   text-align: center;
@@ -107,31 +92,38 @@
 .icon-links li {
   display: inline-block;
 }
-.hovereffect:hover .overlay,
-.hovereffect:hover ul.icon-links li {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-  visibility: visible;
-}
-.hovereffect:hover ul.icon-links li:nth-child(5) {
-  -webkit-transition-delay: 0.3s;
-  transition-delay: 0.3s;
-}
-.hovereffect:hover ul.icon-links li:nth-child(4) {
-  -webkit-transition-delay: 0.25s;
-  transition-delay: 0.25s;
-}
-.hovereffect:hover ul.icon-links li:nth-child(3) {
-  -webkit-transition-delay: 0.2s;
-  transition-delay: 0.2s;
-}
+@media (min-width:768px) {
+  .hovereffect:hover img {
+    -webkit-transform: translate3d(0,-25%,0);
+    transform: translate3d(0,-25%,0);
 
-.hovereffect:hover ul.icon-links li:nth-child(2) {
-  -webkit-transition-delay: 0.15s;
-  transition-delay: 0.15s;
-}
+  }
+  .hovereffect:hover .overlay,
+  .hovereffect:hover ul.icon-links li {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    visibility: visible;
+  }
+  .hovereffect:hover ul.icon-links li:nth-child(5) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  .hovereffect:hover ul.icon-links li:nth-child(4) {
+    -webkit-transition-delay: 0.25s;
+    transition-delay: 0.25s;
+  }
+  .hovereffect:hover ul.icon-links li:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
 
-.hovereffect:hover ul.icon-links li:first-child {
-  -webkit-transition-delay: 0.1s;
-  transition-delay: 0.1s;
+  .hovereffect:hover ul.icon-links li:nth-child(2) {
+    -webkit-transition-delay: 0.15s;
+    transition-delay: 0.15s;
+  }
+
+  .hovereffect:hover ul.icon-links li:first-child {
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+  }
 }
