@@ -52,3 +52,72 @@
 .card-link:hover {
   opacity: 0.1;
 }
+.card-team {
+  display: flex;
+  max-width: 900px;
+  position: relative;
+}
+.card-team img {
+   max-width: 160px;
+   width: 100%;
+}
+.card-team .card-team-img {
+  text-align: center;
+  flex: 20% 0 0;
+}
+.card-team .card-team-text {
+  align-self: flex-start;
+  flex: 65% 0 0;
+  padding: 0px 2rem;
+}
+.card-team .card-team-quote {
+  align-self: center;
+  text-align: center;
+  flex: 35% 0 0;
+}
+.card-team-text-container {
+  flex: 80% 0 0;
+  display: flex;
+}
+.card-team .card-team-title {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.card-team .card-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .card-team {
+    justify-content: center;
+  }
+  .card-team .card-team-title {
+    font-size: 16px;
+  }
+  .card-team .card-team-img {
+    text-align: center;
+    flex: 100px 0 0;
+  }
+  .card-team-text-container {
+    flex: 250px 0 0;
+    padding-left: 10px;
+    max-width: 70%;
+    display: block;
+  }
+  .card-team .card-team-text {
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .card-team .card-team-quote {
+    font-size: 12px;
+  }
+  .card-team .card-subtitle {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .card-team .card-team-quote p {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 0px;
+  }
+}

@@ -1,449 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160649671-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', "UA-160649671-1");
+  </script>
   <meta charset="UTF-8">
 
   <link rel="icon" type="image/png" href="images/logo.png" />
 
   <!-- pour google -->
-  <title>MihiVai - Développement Web</title>
+  <title>Mihivai - Agence Web - Formation, Site internet et Développement web - Bordeaux</title>
   <meta name="description" content="La vision de MihiVai est de faire du numérique un outil accessible à tous. Pour atteindre cet objectif notre entreprise s'articule autour de trois axes principaux : le développement Web, l'enseigenement et la R&D." >
-
+  <meta name="google-site-verification" content="_90vtbQD7y-tvPQRX-GTOzL-0UtUmNlM8amK5kyyK-w" />
   <!-- pour fb -->
-  <meta property=“og:title” content="Mihivai">
-  <meta property=“og:image” content="https://www.mihivai.com/images/logo.png">
-  <meta property=“og:description” content="La vision de MihiVai est de faire du numérique un outil accessible à tous. Pour atteindre cet objectif notre entreprise s'articule autour de trois axes principaux : le développement Web, l'enseigenement et la R&D.">
+  <meta property=“og:title” content="Mihivai - Agence Web - Formation, Site internet et Développement web - Bordeaux">
+  <meta property=“og:image” content="https://www.mihivai.com/images/scene/mihivai_facebook.png">
+  <meta property=“og:description” content="La vision de MihiVai est de faire du numérique un outil accessible à tous. Pour atteindre cet objectif notre entreprise s'articule autour de trois axes principaux : le développement Web, l'enseigenement et l'innovation'.">
 
   <!-- pour twitter -->
 
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:400,700" rel="stylesheet">
   <script src="https://use.fontawesome.com/9cb1633e99.js"></script>
-
   <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  <!-- Optional theme -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
 
-
   <div class="navbar-wagon">
     <!-- Logo -->
     <a href="/" class="navbar-wagon-brand">
-      <img src="images/logo.png" alt="images/logo.png">
+      <img src="images/logo_mhv.svg" alt="logo">
     </a>
 
     <!-- Right Navigation -->
-    <div class="navbar-wagon-right hidden-xs hidden-sm">
-      <a href="#vision" class="navbar-wagon-item navbar-wagon-link">Présentation</a>
-      <a href="#team" class="navbar-wagon-item navbar-wagon-link">Équipe</a>
-      <a href="#projects" class="navbar-wagon-item navbar-wagon-link">Projets</a>
-      <a href="#formations" class="navbar-wagon-item navbar-wagon-link">Formations</a>
-      <a href="#technos" class="navbar-wagon-item navbar-wagon-link">Technologies</a>
-      <a href="#contact" class="navbar-wagon-item navbar-wagon-link">Contact</a>
-      <a href="https://mihivai-supports.herokuapp.com/" target="_blank" class="navbar-wagon-item navbar-wagon-link">
-        Supports
+    <div class="navbar-wagon-right d-none d-md-block">
+      <a href="#team" class="navbar-wagon-item navbar-wagon-link text-dark">EQUIPE</a>
+      <a href="#projects" class="navbar-wagon-item navbar-wagon-link text-dark">PROJETS</a>
+      <a href="#teaching" class="navbar-wagon-item navbar-wagon-link text-dark">FORMATIONS</a>
+    <!--   <a href="#technos" class="navbar-wagon-item navbar-wagon-link">Technologies</a> -->
+      <a href="#contact" class="navbar-wagon-item navbar-wagon-link text-dark">CONTACT</a>
+      <a href="https://mihivai-supports.herokuapp.com/" target="_blank" class="navbar-wagon-item navbar-wagon-link bg-light-blue text-white py-2 border-radius-20px">
+        LAB
       </a>
     </div>
 
     <!-- Dropdown appearing on mobile only -->
-    <div class="navbar-wagon-item hidden-md hidden-lg">
-      <div class="dropdown">
-        <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+    <div class="navbar-wagon-item d-block d-md-none">
+      <div class="dropdown font-size-30px">
+        <i class="fa fa-bars dropdown-toggle color-blue" data-toggle="dropdown"></i>
         <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-          <li><a href="#vision">Présentation</a></li>
           <li><a href="#team">Équipe</a></li>
           <li><a href="#projects">Projets</a></li>
-          <li><a href="#formations">Formations</a></li>
-          <li><a href="#technos">Technologies</a></li>
+          <li><a href="#teaching">Formations</a></li>
+    <!--       <li><a href="#technos">Technologies</a></li> -->
           <li><a href="#contact">Contact</a></li>
-          <li><a href="https://mihivai-supports.herokuapp.com/">Supports</a></li>
+          <li><a href="https://mihivai-LAB.herokuapp.com/">Supports</a></li>
           <li><a href="mention.html">Mentions Légales</a></li>
         </ul>
       </div>
     </div>
   </div>
-
-  <div class="banner-mobile hidden-md hidden-lg">
-    <img src="images/logo.png" alt="images/logo.png">
-    <!-- <h1>MihiVai</h1> -->
-    <p class="text-center"><span>Développement Web</span><br>
-    Accompagner, Transmettre, Innover</p>
-  </div>
-
-  <div class="banner hidden-xs hidden-sm" style="background-image: url('images/banner2.jpg');">
-    <div class="banner-content">
-      <img src="images/logo.png" alt="images/logo.png">
-      <!-- <h1>MihiVai</h1> -->
-      <p><span>Développement Web</span><br>
-      Accompagner, Transmettre, Innover</p>
+  <div class="home">
+    <div class="banner-home text-center" style="background-image: url('images/scene/banner-home-mihivai.svg');">
+      <img src="images/scene/banner-robot-teacher.svg" class="d-none d-md-block banner-img-right" alt="robot teacher">
+      <img src="images/scene/scene_team.svg" class="d-none d-md-block banner-img-left" alt="robot teacher">
+      <div class="banner-home-content">
+        <img src="images/logo_mhv.svg" alt="logo mihivai">
+        <h1 class="color-grey"><span class="color-blue">MihiVai</span><br>Développement Web</h1>
+      </div>
     </div>
-  </div>
-
+    <!-- VISION -->
     <div id="vision"></div>
-  <div class="wrapper text-center margin-top-bottom-100px">
-    <div class="container">
-      <h2>Notre vision</h2>
-      <p class="margin-top-bottom-50px">La <b>vision</b> de MihiVai est de faire du <b>numérique un outil accessible à tous</b>. Pour atteindre cet objectif notre entrepise s'articule autour de <b>trois axes</b> principaux :</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="section">
-            <i class="fa fa-handshake-o" aria-hidden="true"></i>
-            <h3>Accompagnement</h3>
-            <p>MihiVai mobilise à plein temps une <b>équipe pluridisciplinaire</b> de développeurs et de designers afin d'assurer le développement et l'accompagnement de vos projets.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="section">
-            <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-            <h3>Transmission</h3>
-            <p>MihiVai est en partenariat avec de nombreux organismes de formations et de sensibilisation au numérique. Par le biais d'interventions et d'enseignements, elle contribue ainsi à la <b>transmission du savoir</b>.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="section">
-            <i class="fa fa-cogs" aria-hidden="true"></i>
-            <h3>Innovation</h3>
-            <p>MihiVai s'investie également dans la <b>recherche et le développement</b> sur des thématiques qui lui parlent telles que l'enseignement et l'environnement afin de proposer des solutions innovantes.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="banner-second" style="background-image: linear-gradient(-225deg, rgba(0,169,157,0.6) 0%, rgba(0,36,33,0.6) 50%), url('images/banners/computer3.jpg');">
-    <div class="items-center">
+    <div class="wrapper-blue text-center pt-5 pb-4">
       <div class="container">
-        <div class="banner-second-content text-left">
-          <h1>MihiVai</h1>
-          <p>Former les acteurs numériques de demain!</p>
+        <div class="title-container">
+          <p class="h2 color-blue">Notre vision</p>
         </div>
-      </div>
-    </div>
-  </div>
 
-  <div id="team"></div>
-  <div class="wrapper text-center margin-top-bottom-100px">
-    <div class="container">
-      <h2>Notre équipe</h2>
-      <p class="margin-top-bottom-50px">MihiVai intègre une équipe de collaborateurs avec des <b>profils pluridisciplinaires</b> tels que des développeurs, designers et des enseignants-chercheurs.</p>
-      <div class="employee">
-        <img class="img-thumbnail margin-left-right-40px" src="images/team/jonathan.jpg" alt="">
-        <div class="employee-content text-justify">
-          <h3>Jonathan Serafini</h3>
-          <p>Issu d'une lignée d'aventuriers passionnés, j'aime pimenter mon quotidien de challenges, de renouvellements et de rencontres. Je suis convaincu que ces traits de caractère sont une composante forte de la philosophie du développeur. En effet, à mon sens le rôle du développeur est d'accompagner ses clients dans la conception de leurs projets avec leurs particularités et leurs défis techniques. J'ai donc créé MihiVai avec l'ambition qu'elle réponde à cette promesse et qu'elle me permette de partager et de m'aventurer sur des univers toujours différents.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="employee">
-        <div class="employee-content text-justify">
-          <h3>Claudine Pradal</h3>
-          <p>Convaincue que le partage de matière grise permet de développer des solutions nouvelles toujours plus optimales et adaptées, j'aborde le développement web comme un travail d'équipe, un accompagnement où chaque collaborateur du projet peut apporter sa pierre à l'édifice. Curieuse, pétillante, je met aujourd'hui mes compétences en gestion projet mêlées à celles du numérique au service de clients de tout horizon se lancant dans leur aventure digitale.</p>
-        </div>
-        <img class="img-thumbnail margin-left-right-40px" src="images/team/claudine.png" alt="">
-      </div>
-      <hr>
-      <div class="employee">
-        <img class="img-thumbnail margin-left-right-40px" src="images/team/nathan.jpg" alt="">
-        <div class="employee-content text-justify">
-          <h3>Nathan Huberty</h3>
-          <p>Ecolo dans l'âme, j'aime à croire que je vais sauver la planète en écrivant des requêtes SQL nettes et précises et en hébergeant mes serveurs au Groenland. En attendant, je crée des sites pour des start-ups dans l'économie sociale et solidaire.</p>
-        </div>
-      </div>
-      <hr>
-      <div class="employee">
-        <div class="employee-content text-justify">
-          <h3>Isabelle De Matos</h3>
-          <p>De nature consciencieuse et ordonnée, j'accompagne MihiVai dans sa gestion administrative et comptable afin qu'elle puisse au mieux se concentrer sur ce qui la passionne: le développement web, l'enseignement et l'accompagnement.</p>
-        </div>
-        <img class="img-thumbnail margin-left-right-40px" src="images/team/isabelle.jpg" alt="">
+          <ul class="timeline">
+      <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Accompagner</span>
+              </div>
+              <div class="desc" data-aos="fade-left">MihiVai mobilise à plein temps une équipe pluridisciplinaire de développeurs et de designers afin d'assurer le développement et l'accompagnement de vos projets.
+              </div>
+            </div>
+          </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l" style="padding-bottom: 13px;">
+              <div class="flag-wrapper">
+                <span class="flag">Transmettre</span>
+              </div>
+              <div class="desc" data-aos="fade-right">MihiVai est en partenariat avec de nombreux organismes de formations et de sensibilisation au numérique. Par le biais d’interventions et d’enseignements, elle contribue ainsi à la transmission du savoir.
+              </div>
+            </div>
+          </li>
+            <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="flag">Innover</span>
+              </div>
+              <div class="desc" data-aos="fade-left">MihiVai s’investit également dans la recherche et le développement sur des thématiques qui lui parlent telles que l’enseignement et l’environnement afin de proposer des solutions innovantes.
+              </div>
+            </div>
+          </li>
+
+        </ul>
       </div>
     </div>
-  </div>
-  <div class="banner-second" style="background-image: linear-gradient(-225deg, rgba(0,169,157,0.6) 0%, rgba(0,36,33,0.6) 50%), url('images/banners/lewagon.jpg');">
-    <div class="items-center">
+    <!-- TEAM -->
+
+    <div class="wrapper position-relative">
+      <div class="position-absolute top-70px-negative" id="team"></div>
+      <div class="max-width-2000px mx-auto position-relative pt-5 pb-md-5">
+        <div class="container position-relative">
+          <div class="title-container position-relative z-index-1 mx-auto">
+            <p class="h2" data-aos="fade-up">Une équipe pluridisciplinaire et passionnée !</p>
+            <p class="color-grey my-4 z-index-1" data-aos="fade-up">MihiVai intègre une équipe de collaborateurs avec des profils tels que des développeurs, designers et des enseignants-chercheurs.</p>
+          </div>
+        </div>
+        <div class="position-absolute w-100 top-0px container-img-responsive">
+          <div class="d-flex justify-content-between pt-5 pt-lg-0 align-items-start align-items-md-center h-100">
+            <img src="images/scene/scene_team.svg" class="responsive-scene" alt="mhivai team draw">
+            <img src="images/scene/scene_team_cloud.svg" class="h-25 d-none d-xl-block" alt="cloud draw">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container py-3 pt-md-5">
+      <div class="mb-4 mb-md-5 card-team">
+        <div class="card-team-img">
+          <img alt="jonathan serafini" width="100%" class="rounded-circle max-width-150px" src="images/team/avatar_jonathan.png" />
+        </div>
+        <div class="card-team-text-container">
+          <div class="card-team-text">
+            <p class="card-team-title">Jonathan Serafini</p>
+            <p class="card-subtitle">CEO · Développeur web</p>
+            <p class="d-none d-md-block">Issu d’une lignée d’aventuriers passionnés, j’aime pimenter mon quotidien de challenges, de renouvellements et de rencontres. Je suis convaincu que ces traits de caractère sont une composante forte de la philosophie du développeur dont le rôle est d’accompagner ses clients dans la conception de leurs projets avec leurs particularités et leurs défis techniques.</p>
+          </div>
+          <div class="card-team-quote">
+            <p class="color-grey">« J’ai créé MihiVai avec l’ambition qu’elle nous permette de partager et de nous aventurer sur des univers toujours différents. »</p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4 mb-md-5 card-team">
+        <div class="card-team-img">
+          <img alt="claudine pradal" width="100%" class="rounded-circle max-width-150px" src="images/team/avatar_claudine.png" />
+        </div>
+        <div class="card-team-text-container">
+          <div class="card-team-text">
+            <p class="font-weight-normal card-team-title">Claudine Pradal</p>
+            <p class="card-subtitle">CEO · Développeur web · Chef de Projet</p>
+            <p class="d-none d-md-block">Convaincue que le partage de matière grise permet de développer des solutions nouvelles toujours plus optimales et adaptées, j’aborde le développement web comme un travail d’équipe, un accompagnement où chaque collaborateur du projet peut apporter sa pierre à l’édifice.</p>
+          </div>
+          <div class="card-team-quote">
+            <p class="color-grey">« Curieuse, pétillante, je mets aujourd’hui mes compétences en gestion projet mêlées à celles du numérique au service de clients de tout horizon se lançant dans leur aventure digitale. »</p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4 mb-md-5 card-team">
+        <div class="card-team-img">
+          <img alt="florent legeron" width="100%" class="rounded-circle max-width-150px" src="images/team/avatar_florent.png" />
+        </div>
+        <div class="card-team-text-container">
+          <div class="card-team-text">
+            <p class="card-team-title">Florent Legeron</p>
+            <p class="card-subtitle">Développeur web</p>
+            <p class="d-none d-md-block">Le numérique étant un milieu en perpétuel renouvellement, j'aime découvrir de nouvelles technologies, de nouvelles approches, et me mesurer aux différentes problématiques qui en résultent.</p>
+          </div>
+          <div class="card-team-quote">
+            <p class="color-grey">« Enfant du bassin d'Arcachon et ancien chauffeur-livreur j'ai effectué un virage à 180 degré afin de travailler dans un domaine qui me passionne, le développement web. »</p>
+          </div>
+        </div>
+      </div>
+      <div class="mb-4 mb-md-5 card-team">
+        <div class="card-team-img">
+          <img alt="emma laurent" width="100%" class="rounded-circle max-width-150px" src="images/team/avatar_emma.jpg" />
+        </div>
+        <div class="card-team-text-container">
+          <div class="card-team-text">
+            <p class="card-team-title">Emma Laurent</p>
+            <p class="card-subtitle">Développeur web</p>
+            <p class="d-none d-md-block">A cause de mon tempérament curieux et bonne enfant, j'ai une soif constante de découverte.
+    Le numérique correspondant parfaitement, le choix semblait donc logique : je suis devenue développeuse full-stack chez mihivai.
+    Les projets que l'on traite sont variés et pluridiciplinaires et me permettent de constament me renouveler.</p>
+          </div>
+          <div class="card-team-quote">
+            <p class="color-grey">« Vraie geek dans l'âme, je vois le monde de la tech comme une suite de casse têtes et de challenges que j'aime relever. »</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- OUIPHARMA + BUTRFLY -->
+    <div class="wrapper bg-light-grey position-relative">
+      <div class="position-absolute top-70px-negative"id="projects"></div>
+      <div class="max-width-2000px mx-auto position-relative">
+        <img src="images/scene/scene_projects_window.svg" class="d-none d-md-block position-absolute w-25 transform-y-25" alt="window">
+        <img src="images/scene/scene_projects_persona.svg" class="d-none d-md-block position-absolute w-25 right-0 transform-y-center top-10" alt="personna">
+        <div class="container py-5">
+          <div class="title-container mx-auto mb-3 mb-md-5">
+            <h5 class="color-blue">ACCOMPAGNER</h5>
+            <h2 data-aos="fade-up">Un accompagnement sur mesure pour la conception de votre projet web.</h2>
+            <p class="color-grey my-4" data-aos="fade-up">MihiVai a déjà accompagné plusieurs entreprises dans la conception et/ou la maintenance de leurs outils numériques. Nous sommes heureux d'avoir pu contribuer à la réalisation de leurs projets.</p>
+          </div>
+          <div class="d-flex flex-wrap align-items-center justify-content-center mb-3">
+            <img src="images/desktop_object_opt.png" class="col-4 col-md-7" alt="ouipharma desktop">
+            <div class="col-8 col-md-4 col-lg-3">
+              <a href="https://www.ouipharma.fr/" class="text-dark" target="_blank">Ouipharma</a>
+              <p class="color-grey">2019</p>
+              <p>Développement de l'interface utilisateur, utilisation du système de paiement en ligne Stripe, mise en place d'une map interactive pour mettre en relation famille et au-pair.</p>
+              <p class="mb-0">Réalisé avec :</p>
+              <img src="images/icons/icon_ouipharma.png" class="icon-large" alt="icons web technologies">
+            </div>
+          </div>
+          <div class="d-flex flex-wrap flex-row-reverse align-items-center justify-content-center">
+            <img src="images/iphone_object_opt.png" class="col-4 col-md-6" alt="butrfly mobile">
+            <div class="col-8 col-md-4 col-lg-3">
+              <a href="https://www.aupairbutrfly.com/" class="text-dark" target="_blank">BUTRFLY</a>
+              <p class="color-grey">2019</p>
+              <p>Développement de l'interface utilisateur, utilisation du système de paiement en ligne Stripe, mise en place d'une map interactive pour mettre en relation famille et au-pair.</p>
+              <p class="mb-0">Réalisé avec :</p>
+              <img src="images/icons/icon_butrfly.png" class="icon-large" alt="icons web techno">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CONTACT -->
+    <div class="container position-relative">
+      <div class="position-absolute top-70px-negative"id="contact"></div>
+      <div class="py-5 d-md-flex justify-content-between align-items-center">
+
+        <div class="max-width-300px">
+          <h2 class="h2 font-weight-bold font-size-24px font-size-16px-responsive">Envie d'être accompagné dans votre projet Web ?</h2>
+        </div>
+        <div class="max-width-300px">
+          <p class="font-size-24px font-size-16px-responsive">Contactez-nous</p>
+          <p class="color-blue font-size-24px font-size-16px-responsive mb-0">
+            <a href="tel:+33618237331" class="color-blue">+ 33 6 18 23 73 31</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- PROJECTS -->
+    <div class="wrapper bg-light-grey py-5">
       <div class="container">
-        <div class="banner-second-content text-left">
-          <h1>MihiVai</h1>
-          <p>Une équipe pluridisciplinaire et passionnée!</p>
+        <div class="title-container">
+          <h2 class="h2 color-grey text-center mb-5">Les derniers projets :</h2>
+        </div>
+        <div class="row">
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.pena.fr/" class="z-index-1" target="_blank">
+                <img src="images/work/card_pena.png" alt="Pena" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-js.png" class="icon" alt="js"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.stage-in.fr/" class="z-index-1" target="_blank">
+                <img src="images/work/card_stagein.png" alt="stage-in" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-js.png" class="icon" alt="js"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.ludoria.fr/" class="z-index-1" target="_blank">
+                <img src="images/work/card_ludoria.png" alt="" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-js.png" class="icon" alt="js"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.aeb-brioude.com/" class="z-index-1" target="_blank">
+                <img src="images/work/card_aeb.jpg" alt="" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.zenest.pro/" class="z-index-1" target="_blank">
+                <img src="images/work/card_zenest.png" alt="" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-js.png" class="icon" alt="js"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                  <li><img src="images/tools/logo-stripe.png" class="icon" alt="stripe"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.ouirestauration.fr/" class="z-index-1" target="_blank">
+                <img src="images/work/card_ouirestau.jpg" alt="ouirestau" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://transbois.herokuapp.com/" class="z-index-1" target="_blank">
+                <img src="images/work/card_transbois.png" alt="transbois" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.aupairbutrfly.com/" class="z-index-1" target="_blank">
+                <img src="images/work/card_butrfly.png" alt="butrfly" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-js.png" class="icon" alt="js"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                  <li><img src="images/tools/logo-stripe.png" class="icon" alt="stripe"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 col-6 mb-4">
+            <div class="hovereffect box-shadow rounded">
+              <a href="https://www.imdi.fr/" class="z-index-1" target="_blank">
+                <img src="images/work/card_imdi.png" alt="imdi" class="w-100">
+              </a>
+              <div class="overlay">
+                <ul class="icon-links mt-3">
+                  <li><img src="images/tools/logo-css3.png" class="icon" alt="css"></li>
+                  <li><img src="images/tools/logo-html.png" class="icon" alt="html"></li>
+                  <li><img src="images/tools/logo-js.png" class="icon" alt="js"></li>
+                  <li><img src="images/tools/logo-rails.png" class="icon" alt="rails"></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
-  </div>
 
-  <div id="projects"></div>
-  <div class="wrapper text-center margin-top-bottom-100px">
-    <div class="container">
-      <h2>Nos derniers projets</h2>
-      <p class="margin-top-bottom-50px">MihiVai a déjà <b>accompagné</b> plusieurs entreprises dans la <b>conception</b>  et/ou la <b>maintenance</b> de leurs outils numériques. Nous sommes heureux d'avoir pu contribuer à la réalisation de leurs projets. En voici quelques uns.</p>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card margin-top-bottom-15px" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.directocuisines.fr/assets/doc-preview-e417d69de6bf2cf6a2e2a31ffbaa9781be4336b2a11a6abf166dca884325ed05.png');">
-            <div class="card-category">Full Stack</div>
-            <div class="card-description">
-              <h2>Direct'O'Cuisines</h2>
-            </div>
-            <i class="fa fa-laptop card-user" aria-hidden="true"></i>
-            <a class="card-link" target="_blank" href="https://www.directocuisines.fr" ></a>
+    <div class="wrapper position-relative">
+      <div class="position-absolute top-70px-negative"id="teaching"></div>
+      <div class="max-width-2000px mx-auto position-relative">
+        <img src="images/scene/scene_teaching_students.svg" class="w-50 top-300px transform-y-30 left-5-negative position-absolute d-none d-md-block" alt="scene students">
+        <img src="images/scene/scene_teaching_teacher.svg" class="w-25 position-absolute right-0" alt="scene-teacher">
+        <div class="container">
+          <div class="title-container position-relative mx-auto pt-5">
+            <h5 class="color-blue">TRANSMETTRE</h5>
+            <h2 data-aos="fade-up">Organisme de formation des métiers du numérique</h2>
+            <p class="color-grey z-index-1 mt-4" data-aos="fade-up">Parce que la transmission fait partie de nos valeurs mais aussi parce que nous croyons que notre époque est un moment charnière de la transition numérique, nous avons fait l’engagement d’accompagner et de former les acteurs du web de demain, en tant qu'organisme de formation</p>
           </div>
         </div>
-        <div class="col-md-4">
-          <div class="card margin-top-bottom-15px" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.orange.com/var/orange_site/storage/images/orange.com/press-room/folder/mobile-world-congress-2017/start-up-2017/dmic/1277423-1-fre-FR/DMIC_page-full.jpg');">
-            <div class="card-category">Front End</div>
-            <div class="card-description">
-              <h2>D.M.I.C</h2>
-            </div>
-            <i class="fa fa-pencil card-user" aria-hidden="true"></i>
-            <a class="card-link" target="_blank" href="https://www.dmic.fr" ></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card margin-top-bottom-15px" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://pbs.twimg.com/profile_images/528689866515562496/RTRK6Ft8.jpeg');">
-            <div class="card-category">Full Stack</div>
-            <div class="card-description">
-              <h2>Atmosfeel</h2>
-            </div>
-            <i class="fa fa-laptop card-user" aria-hidden="true"></i>
-            <a class="card-link" target="_blank" href="https://www.Atmosfeel.fr" ></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card margin-top-bottom-15px" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://www.barchen.fr/wp-content/files/pageMF.png');">
-            <div class="card-category">Back End</div>
-            <div class="card-description">
-              <h2>Barchën</h2>
-            </div>
-            <i class="fa fa-code card-user" aria-hidden="true"></i>
-            <a class="card-link" target="_blank" href="http://www.barchen.fr" ></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card margin-top-bottom-15px" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://www.davytopiol.com/wp-content/uploads/2016/08/FMLOGISTIC-Pr%C3%A9sentation-Corporate-480x480.jpg');">
-            <div class="card-category">Back End</div>
-            <div class="card-description">
-              <h2>FM Logistic</h2>
-            </div>
-            <i class="fa fa-code card-user" aria-hidden="true"></i>
-            <a class="card-link" target="_blank" href="http://www.fmlogistic.com" ></a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card margin-top-bottom-15px" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://www.aupairbutrfly.com/assets/favicon-25ab3a89960b23d218b4425bd8f96650fbf734b5a62571b27226d5262c7f88e6.ico');">
-            <div class="card-category">Full Stack</div>
-            <div class="card-description">
-              <h2>Butrfly</h2>
-            </div>
-            <i class="fa fa-laptop card-user" aria-hidden="true"></i>
-            <a class="card-link" target="_blank" href="https://www.aupairbutrfly.com" ></a>
-          </div>
-        </div>
+        <div class="w-25 padding-md-15"></div>
       </div>
-    </div>
-  </div>
 
-
-
-  <div class="banner-second" style="background-image: linear-gradient(-225deg, rgba(0,169,157,0.6) 0%, rgba(0,36,33,0.6) 50%), url('images/banners/computer4.jpg');">
-    <div class="items-center">
+      <!-- Progress bar -->
       <div class="container">
-        <div class="banner-second-content text-left">
-          <h1>MihiVai</h1>
-          <p>Un accompagnement personnalisé et durable de vos projets!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="formations"></div>
-  <div class="wrapper text-center margin-top-bottom-100px">
-    <div class="container">
-      <h2>Les centres de formations</h2>
-      <p class="margin-top-bottom-50px">
-        Parce que la <b>transmission</b> fait partie de nos valeurs mais aussi parce que nous croyons que notre époque est un moment charnière de la <b>transition numérique</b>, nous avons fait l'engagement d'accompagner et de <b>former les acteurs du web de demain</b>.<br>
-        Pour cela nous enseignons dans différents centre de formations :
-      </p>
-      <div class="partners">
-        <a href="https://www.lewagon.com/" target="_blank">
-          <img class="partner" src="images/partners/lewagon.png" alt="le wagon logo">
-        </a>
-        <a href="https://www.mmibordeaux.com/" target="_blank">
-          <img class="partner" src="images/partners/mmi.png" alt="mmi logo">
-        </a>
-        <a href="http://www.epsi.fr/" target="_blank">
-          <img class="partner" src="images/partners/epsi.png" alt="epsi logo">
-        </a>
-        <a href="http://www.wis-ecoles.com/" target="_blank">
-          <img class="partner" src="images/partners/wis.png" alt="wis logo">
-        </a>
-      </div>
-      <div class="partners">
-        <a href="https://kedge.edu/" target="_blank">
-          <img class="partner" src="images/partners/kedge.svg" alt="kedge logo">
-        </a>
-        <a href="http://www.iseg.fr/" target="_blank">
-          <img class="partner" src="images/partners/iseg.png" alt="iseg logo">
-        </a>
-        <a href="https://www.efap.com/" target="_blank">
-          <img class="partner" src="images/partners/efap.png" alt="efap logo">
-        </a>
-        <a href="https://hdgdev.com/" target="_blank">
-          <img class="partner" src="images/partners/hdgd.png" alt="hdgd logo">
-        </a>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="banner-second" style="background-image: linear-gradient(-225deg, rgba(0,169,157,0.6) 0%, rgba(0,36,33,0.6) 50%), url('images/banners/ingenieurie.jpg');">
-    <div class="items-center">
-      <div class="container">
-        <div class="banner-second-content text-left">
-          <h1>MihiVai</h1>
-          <p>S'investir dans la R&D pour contribuer à un monde innovant!</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="technos"></div>
-  <div class="wrapper text-center margin-top-bottom-100px">
-    <div class="container">
-      <h2>Nos outils</h2>
-      <p class="margin-top-bottom-50px">
-        MihiVai utilise des technologies <b>robustes</b> et <b>flexibles</b> permettant de répondre au mieux aux différentes problématiques <b>back-end</b> et <b>front-end</b> afin de façonner un <b>projet qui vous ressemble</b>. Nous faisons également une <b>veille permanente</b> afin d'intégrer les <b>dernières tendances</b> du web lors de la conception :
-      </p>
-      <div class="row">
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-ruby.png" alt="">
-            <p><b>Ruby</b></p>
+        <div class="progressbar">
+          <div class="counter-frame">
+            <span id="counter" data-speed="2" data-interval="4">824</span>
+            <section class="radial-chart">
+              <svg class="radial-chart__svg" xmlns="http://www.w3.org/2000/svg" width="200" height="200">
+              <circle cx="100" cy="100" r="80" fill="none" stroke="#b1f8f0" stroke-width="12" />
+              <circle id="animated_counter" class="" cx="100" cy="100" r="80" fill="none" stroke="#85f1e6" stroke-width="12" stroke-dasharray="550.292" stroke-dashoffset="550.292"/>
+              </svg>
+            </section>
           </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-rails.png" alt="">
-            <p><b>Rails</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-pg.png" alt="">
-            <p><b>Postgresql</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-html.png" alt="">
-            <p><b>HTML5</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-css3.png" alt="">
-            <p><b>CSS3</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-js.png" alt="">
-            <p><b>Java Script</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-github.png" alt="">
-            <p><b>Github</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-heroku.jpg" alt="">
-            <p><b>Heroku</b></p>
-          </div>
-        </div>
-        <div class="col-xs-6 col-md-4">
-          <div class="margin-top-bottom-20px">
-            <img class="partner" src="images/tools/logo-stripe.png" alt="">
-            <p><b>Stripe</b></p>
+          <div class="py-md-4 mb-3">
+            <p class="text-center color-blue mb-1 counter-txt">Apprenants</p>
+            <h3 class="counter-txt">déjà formés dans les différentes écoles où nous enseignons :</h3>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-
-  <div class="banner-second" style="background-image: linear-gradient(-225deg, rgba(0,169,157,0.6) 0%, rgba(0,36,33,0.6) 50%), url('images/banners/computer.jpg');">
-    <div class="items-center">
-      <div class="container">
-        <div class="banner-second-content text-left">
-          <h1>MihiVai</h1>
-          <p>Des technologies robustes et durables intégrant les dernières innovations du web!</p>
-        </div>
+    <div class="container pb-5">
+      <div class="d-flex flex-wrap justify-content-center align-items-center w-100">
+        <img src="images/partners/lewagon.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="lewagon">
+        <img src="images/partners/epsi.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="epsi">
+        <img src="images/partners/hdgd.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="hdgd">
+        <img src="images/partners/iseg.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="iseg">
+        <img src="images/partners/mmi.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="mmi">
+        <img src="images/partners/efap.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="efap">
+        <img src="images/partners/wis.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="wis">
+        <img src="images/partners/kedge.svg" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="kedge">
+        <img src="images/partners/efj.jpg" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="simplon">
+        <img src="images/partners/simplon.png" class="height-30px-md-50px my-3 mx-3 mx-md-5" alt="efj">
       </div>
     </div>
-  </div>
 
-  <div id="contact"></div>
-  <div class="wrapper text-center margin-top-bottom-100px">
-    <div class="container">
-      <h2>Nous contacter</h2>
-      <p class="margin-top-bottom-50px">Si vous souhaitez avoir des renseignements, nous restons à votre écoute. N'hésitez pas à nous contacter.</p>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="text-left contact">
-            <p><b>MihiVai - Adresse postale</b></p>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> Jonathan Serafini</p>
-            <p>8 Rue Charles Durand</p>
-            <p>33300, Bordeaux</p>
-            <p class="phone"><i class="fa fa-phone" aria-hidden="true"></i> : 06 18 23 73 31</p>
-            <ul class="list-inline">
-              <li>
-                <i class="fa fa-facebook-square" aria-hidden="true"></i>
-              </li>
-              <li>
-                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-              </li>
-              <li>
-                <i class="fa fa-github-square" aria-hidden="true"></i>
-              </li>
+
+    <!-- INNOVER -->
+    <div class="wrapper bg-light-grey">
+      <div class="max-width-2000px mx-auto position-relative py-5">
+        <img src="images/scene/scene_research_robot.svg" class="position-absolute w-25 transform-y-25 top-0px" alt="scene robot">
+        <img src="images/scene/scene_research_scientist.svg" class="position-absolute w-25 right-0 d-none d-lg-block" alt="scene scientist">
+
+        <div class="container">
+          <div class="title-container position-relative mx-auto">
+            <h5 class="color-blue">INNOVER</h5>
+            <h2 data-aos="fade-up">S’investir dans la Recherche et le Développement.</h2>
+            <p class="color-grey z-index-1" data-aos="fade-up">MihiVai utilise des technologies robustes et flexibles permettant de répondre au mieux aux différentes problématiques back-end et front-end afin de façonner un projet qui vous ressemble. Nous faisons également une veille permanente afin d’intégrer les dernières tendances du web lors de la conception.</p>
+          </div>
+        </div>
+        <div class="w-25"style="padding-top:8%"></div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="wrapper bg-light-blue py-5 footer-mhv">
+      <div class="container footer-mihivai-block">
+        <div class="row">
+          <div class="col-7 offset-2 col-sm-5 offset-sm-1 col-lg-2 offset-lg-1 footer-mhv-col">
+            <p>MIHIVAI</p>
+            <ul class="list-style-none pl-0">
+              <li><b>Accompagner,<br>Transmettre,<br>Innover</b></li><br>
+              <li>Agence de développement web<br> à Bordeaux</li><br>
+              <li><a href="mention.html">Mentions Légales</a></li>
+              <li>Tout droits réservés<br>© Mihivai 2019</li>
             </ul>
           </div>
-
-        </div>
-        <div class="col-md-6">
-          <div class="text-left contact">
-            <p><b>MihiVai - Les bureaux</b></p>
+          <div class="col-7 offset-2 col-sm-5 offset-sm-1 col-lg-2 offset-lg-1 footer-mhv-col">
+            <p>SERVICES</p>
+            <ul class="list-style-none pl-0">
+              <li>Développement<br>Formation<br>Conseil</li><br>
+              <li>Vous voulez être accompagné<br> dans votre projet ?<br> Contactez-nous</li>
+            </ul>
           </div>
-          <iframe height="450" frameborder="0" style="border:0; width: 100%;"
-            src="https://www.google.com/maps/embed/v1/place?q=la%20wagon&key=AIzaSyAfJub2_IIMGn2IBs-2UBOQ3_KiAIl43EM" allowfullscreen></iframe>
+          <div class="col-7 offset-2 col-sm-5 offset-sm-1 col-lg-2 offset-lg-1 footer-mhv-col">
+            <p>CONTACT</p>
+            <ul class="list-style-none pl-0">
+              <li>Jonathan Serafini<br><span>06 18 23 73 31</span><br><a href="mailto:jonathan.serafini@gmail.com">jonathan.serafini@gmail.com</a></li><br>
+              <li>Claudine Pradal<br>07 67 51 06 48<br><a href="mailto:clo.pradal@gmail.com">clo.pradal@gmail.com</a></li><br>
+              <li>Adresse : 20 Place Saint-Martial<br>33 300 Bordeaux</li>
+            </ul>
+          </div>
+          <div class="col-7 offset-2 col-sm-5 offset-sm-1 col-lg-2 offset-lg-1 footer-mhv-col">
+            <p>SUIVEZ-NOUS</p>
+            <div class="footer-mhv-icon">
+              <a href="https://www.facebook.com/mihivai.web/" class="text-decoration-none" target="_blank">
+                <img src="images/icons/facebook-square-brands.svg" alt="facebook">
+              </a>
+              <a href="https://www.linkedin.com/company/mihivai/about/" class="text-decoration-none" target="_blank">
+               <img src="images/icons/linkedin-brands.svg" alt="linkedin">
+             </a>
+              <a href="https://github.com/mihivai" class="text-decoration-none" target="_blank">
+                <img src="images/icons/github-square-brands.svg" alt="github">
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer">
-    <div class="footer-links">
-      <a href="#"><i class="fa fa-github"></i></a>
-      <a href="#"><i class="fa fa-facebook"></i></a>
-      <a href="#"><i class="fa fa-linkedin"></i></a>
-    </div>
-    <div class="footer-copyright hidden-sm hidden-xs">
-      MihiVai
-      <a href="mention.html" class="mention-legal">Mentions Légales</a>
-    </div>
-  </div>
-
+    <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Mihivai",
+      "url": "http://www.mihivai.com/",
+      "logo": "https://www.mihivai.com/images/logo.png",
+      "contactPoint": [{
+        "@type": "ContactPoint",
+        "url": "https://www.mihivai.com",
+        "email": "contact@mihivai.com",
+        "telephone": "+33-618237331",
+        "contactType": "customer service"
+      }],
+      "sameAs": [
+        "http://www.facebook.com/your-profile",
+        "http://instagram.com/yourProfile"
+      ],
+      "image": "https://www.mihivai.com/images/logo.png",
+      "description": "La vision de MihiVai est de faire du numérique un outil accessible à tous. Pour atteindre cet objectif notre entreprise s'articule autour de trois axes principaux : le développement Web, l'enseigenement et l'innovation."
+    }
+    </script>
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+    <script src="js/script.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
