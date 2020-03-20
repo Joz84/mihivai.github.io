@@ -44,25 +44,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 </head>
 <body>
-  <div class="navbar-wagon">
-    <!-- Logo -->
+
+  <div class="navbar-mihivai">
+  <a href="/" class="navbar-mihivai-brand">
+    <img src="images/logo_mhv.svg" alt="logo">
+  </a>
+
+  <div class="d-none d-md-block">
+    <div class="d-flex align-items-center justify-content-between">
+       <a href="/#team" class="navbar-wagon-item navbar-wagon-link text-dark">EQUIPE</a>
+      <a href="/#projects" class="navbar-wagon-item navbar-wagon-link text-dark">PROJETS</a>
+      <a href="/#teaching" class="navbar-wagon-item navbar-wagon-link text-dark">FORMATIONS</a>
+      <a href="/#contact" class="navbar-wagon-item navbar-wagon-link text-dark">CONTACT</a>
+      <a href="https://mihivai-supports.herokuapp.com/" target="_blank" class="navbar-wagon-item navbar-wagon-link bg-light-blue text-white py-2 border-radius-20px">
+        LAB
+      </a>
+    </div>
+  </div>
+
+  <div class="d-block d-md-none">
+    <div class="navbar-dropdown">
+      <input id="toggle" type="checkbox"/>
+      <label class="hamburger" for="toggle">
+        <div class="top"></div>
+        <div class="meat"></div>
+        <div class="bottom"></div>
+      </label>
+
+      <div class="nav">
+        <div class="nav-wrapper">
+          <nav class= "d-flex flex-column">
+            <a href="/#team">Équipe</a>
+            <a href="/#projects">Projets</a>
+            <a href="/#teaching">Formations</a>
+            <a href="/#contact">Contact</a>
+            <a href="https://mihivai-supports.herokuapp.com">Lab</a>
+            <a href="mention.html">Mentions Légales</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div style="height: 70px;"></div>
+
+
+  <!-- <div class="navbar-wagon">
     <a href="/" class="navbar-wagon-brand">
       <img src="images/logo_mhv.svg" alt="logo">
     </a>
 
-    <!-- Right Navigation -->
     <div class="navbar-wagon-right d-none d-md-block">
       <a href="/#team" class="navbar-wagon-item navbar-wagon-link text-dark">EQUIPE</a>
       <a href="/#projects" class="navbar-wagon-item navbar-wagon-link text-dark">PROJETS</a>
       <a href="/#teaching" class="navbar-wagon-item navbar-wagon-link text-dark">FORMATIONS</a>
-    <!--   <a href="#technos" class="navbar-wagon-item navbar-wagon-link">Technologies</a> -->
       <a href="/#contact" class="navbar-wagon-item navbar-wagon-link text-dark">CONTACT</a>
       <a href="https://mihivai-supports.herokuapp.com/" target="_blank" class="navbar-wagon-item navbar-wagon-link bg-light-blue text-white py-2 border-radius-20px">
         LAB
       </a>
     </div>
 
-    <!-- Dropdown appearing on mobile only -->
     <div class="navbar-wagon-item d-block d-md-none">
       <div class="dropdown font-size-30px">
         <i class="fa fa-bars dropdown-toggle color-blue" data-toggle="dropdown"></i>
@@ -70,14 +112,14 @@
           <li><a href="/#team">Équipe</a></li>
           <li><a href="/#projects">Projets</a></li>
           <li><a href="/#teaching">Formations</a></li>
-    <!--       <li><a href="/#technos">Technologies</a></li> -->
           <li><a href="/#contact">Contact</a></li>
-          <li><a href="https://mihivai-LAB.herokuapp.com/">Supports</a></li>
+          <li><a href="https://mihivai-LAB.herokuapp.com/">Lab</a></li>
           <li><a href="mention.html">Mentions Légales</a></li>
         </ul>
       </div>
     </div>
-  </div>
+  </div> -->
+
   <div class="home">
     <div class="banner-home text-center" style="background-image: url('images/scene/banner-home-mihivai.svg');">
       <img src="images/scene/banner-robot-teacher.svg" class="d-none d-md-block banner-img-right" alt="robot teacher">
@@ -88,7 +130,6 @@
       </div>
     </div>
   </div>
-
 
   <div class="wrapper margin-top-bottom-100px text-justify">
     <div class="container">
