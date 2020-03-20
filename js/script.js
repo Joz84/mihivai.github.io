@@ -60,7 +60,7 @@ document.querySelector(".nav").querySelectorAll(".removeWrapper").forEach((link)
   }))
 })
 $("#close-cookie-bar").click(function(){
-    Cookies.set('mihivai-cookie-accept', 'accepted', { expires: 5000, domain: 'www.mihivai.com' });
+    Cookies.set('mihivai-cookie-accept', 'accepted', { domain: 'www.mihivai.com' });
     $('#cookie-container').hide();
 });
 
