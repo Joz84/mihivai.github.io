@@ -11,7 +11,6 @@
   <meta charset="UTF-8">
 
   <link rel="icon" type="image/png" href="images/logo.png" />
-
   <!-- pour google -->
   <title>Mihivai - Agence Web - Formation, Site internet et Développement web - Bordeaux</title>
   <meta name="description" content="La vision de MihiVai est de faire du numérique un outil accessible à tous. Pour atteindre cet objectif notre entreprise s'articule autour de trois axes principaux : le développement Web, l'enseigenement et l'innovation." >
@@ -31,10 +30,9 @@
   <meta property="twitter:title" content="Mihivai - Agence Web - Formation, Site internet et Développement web - Bordeaux">
   <meta property="twitter:description" content="La vision de MihiVai est de faire du numérique un outil accessible à tous. Pour atteindre cet objectif notre entreprise s'articule autour de trois axes principaux : le développement Web, l'enseigenement et la R&D.">
   <meta property="twitter:image" content="https://www.mihivai.com/images/scene/mihivai_facebook.png">
-
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:400,700" rel="stylesheet">
@@ -80,11 +78,10 @@
       <div class="nav">
         <div class="nav-wrapper">
           <nav class= "d-flex flex-column">
-            <a href="#team">Équipe</a>
-            <a href="#projects">Projets</a>
-            <a href="#teaching">Formations</a>
-      <!--       <a href="#technos">Technologies</a> -->
-            <a href="#contact">Contact</a>
+            <a class="removeWrapper" href="#team">Équipe</a>
+            <a class="removeWrapper" href="#projects">Projets</a>
+            <a class="removeWrapper" href="#teaching">Formations</a>
+            <a class="removeWrapper" href="#contact">Contact</a>
             <a href="https://mihivai-supports.herokuapp.com" target="_blank">Lab</a>
           </nav>
         </div>
@@ -582,6 +579,16 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div id="cookie-container">
+      <div id="cookie-text" class="d-flex align-items-center container justify-content-between">
+        <span>
+          Les cookies assurent le bon fonctionnement de nos services. En utilisant ces derniers, vous acceptez l'utilisation des cookies. <a href="mention.html" class="color-blue">En savoir plus</a>.
+        </span>
+        <!-- Cross SVG -->
+        <div id="close-cookie-bar" class="ml-3 bg-light-blue text-white rounded px-3 py-1">OK</div>
       </div>
     </div>
 

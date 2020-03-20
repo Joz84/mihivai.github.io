@@ -54,3 +54,22 @@ window.addEventListener("DOMContentLoaded", function () {
     observer.observe(target)
   })
 })
+document.querySelector(".nav").querySelectorAll(".removeWrapper").forEach((link)=>{
+  link.addEventListener("click",((e)=>{
+    document.querySelector(".hamburger").click()
+  }))
+})
+$("#close-cookie-bar").click(function(){
+    Cookies.set('mihivai-cookie-accept', 'accepted', { expires: 5000 });
+});
+
+$(document).ready(function(){
+  $('#cookie-container').hide();
+  if (Cookies.get('mihivai-cookie-accept') == ('accepted')) {
+    $('#cookie-container').hide();
+    console.log('Cookies Accepted');
+  } else {
+    $('#cookie-container').show();
+    console.log('Show Cookie Bar');
+  }
+});
