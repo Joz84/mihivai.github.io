@@ -61,6 +61,7 @@ document.querySelector(".nav").querySelectorAll(".removeWrapper").forEach((link)
 })
 $("#close-cookie-bar").click(function(){
     Cookies.set('mihivai-cookie-accept', 'accepted', { expires: 5000 });
+    $('#cookie-container').hide();
 });
 
 $(document).ready(function(){
