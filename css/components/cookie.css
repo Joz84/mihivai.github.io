@@ -15,11 +15,6 @@
   position: relative;
 }
 
-.icon {
-  height: 30px;
-  margin-bottom: -10px
-}
-
 #close-cookie-bar {
   opacity: 0.8;
   -webkit-transition: all ease-in-out 0.3s;
