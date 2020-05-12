@@ -58,12 +58,13 @@
   position: relative;
 }
 .card-team img {
-   max-width: 160px;
-   width: 100%;
+  height: 160px;
+  width: 160px;
+  object-fit: cover;
 }
 .card-team .card-team-img {
   text-align: center;
-  flex: 20% 0 0;
+  flex: 180px 0 0;
 }
 .card-team .card-team-text {
   align-self: flex-start;
@@ -87,6 +88,16 @@
   font-size: 20px;
   font-weight: bold;
 }
+@media (max-width: 991px) {
+  .card-team .card-team-img {
+    flex: 140px 0 0;
+    height: 140px;
+  }
+  .card-team img {
+    height: 100%;
+    width: 100%;
+  }
+}
 @media (max-width: 767px) {
   .card-team {
     justify-content: center;
@@ -95,8 +106,8 @@
     font-size: 16px;
   }
   .card-team .card-team-img {
-    text-align: center;
     flex: 100px 0 0;
+    height: 100px;
   }
   .card-team-text-container {
     flex: 250px 0 0;
